@@ -1,0 +1,19 @@
+Outra forma de fazer isso, seria criar uma Interface de Arquivo com o método abstrato "lerArquivo()" dentro.. e depois para cada tipo de arquivo,
+criar uma classe que vai implementar essa interface..
+
+Mas essa forma ainda não seria muito eficiente, pois ainda teriam vários "if" pra definir qual classe instanciar.
+
+
+
+ String caminho = this.diretorio + "\\" + this.nomeArquivo;
+ String[] extensao = caminho.split("\\.");
+
+if (Objects.equals(extensao[1], "xlsx")) {
+            Xlsx xlsx = new Xlsx();
+            List<Pessoa> pessoas = xlsx.lerArquivo(caminho);
+            pessoas.forEach(System.out::println);
+        } else if (Objects.equals(extensao[1], "txt")) {
+            Txt txt = new Txt();
+            List<Pessoa> pessoas = txt.lerArquivo(caminho);
+            pessoas.forEach(System.out::println);
+        }
