@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class Txt extends Arquivo1 {
+public class Txt extends Arquivo {
 
 
     public List<Pessoa> lerArquivo(String caminho) {

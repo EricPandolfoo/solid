@@ -5,7 +5,7 @@ import com.eric.solid.ocp.errado.Pessoa;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Arquivo1 {
+public class Arquivo {
 
     private final List<Pessoa> pessoas = new ArrayList<>();
 
