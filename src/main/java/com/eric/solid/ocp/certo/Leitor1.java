@@ -45,7 +45,7 @@ public class Leitor1 {
         String path = "com.eric.solid.ocp.certo.extrator.";
         String className = extensao[1].toUpperCase().charAt(0) + extensao[1].substring(1);
 
-        //Definindo a classe que irá instanciar de acordo com a extensão do arquivo
+        //Definindo a classe que irá instanciar de acordo com a extensão do arquivo.. isso se chama reflection
         Class<?> classInvoked = Class.forName(path + className);
         Object objectToInvokeOn = classInvoked.newInstance();
 
