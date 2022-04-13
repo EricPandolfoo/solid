@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SolidApplication {
 
 	//Texto teste
+	//Segundo texto
 	public static void main(String[] args) {
 		SpringApplication.run(SolidApplication.class, args);
 	}
